@@ -9,7 +9,7 @@ const schemas = require("../../shemas");
 
 const router = express.Router();
 
-router.get("/", isValidId, ctrlWrapper(contactsController.listContacts));
+router.get("/", ctrlWrapper(contactsController.listContacts));
 
 router.get(
   "/:contactId",
