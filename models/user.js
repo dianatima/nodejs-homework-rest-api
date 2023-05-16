@@ -20,6 +20,10 @@ const schema = Schema(
       type: String,
       default: "",
     },
+    avatarURL: {
+      type: String,
+      required: true,
+    },
     contacts: {
       type: [Types.ObjectId],
       ref: "contacts",
