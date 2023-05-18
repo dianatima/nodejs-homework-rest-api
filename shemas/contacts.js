@@ -7,6 +7,10 @@ const contactShema = Joi.object({
   favorite: Joi.boolean(),
 });
 
+const emailSchema = Joi.object({
+  email: Joi.string().required(),
+});
+
 const contactUpdateFavoriteShema = Joi.object({
   favorite: Joi.boolean().required(),
 });
@@ -14,4 +18,5 @@ const contactUpdateFavoriteShema = Joi.object({
 module.exports = {
   contactShema,
   contactUpdateFavoriteShema,
+  emailSchema,
 };
